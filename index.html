@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title> </title>
+  </head>
+  <body>
+    <div id="button-container">
+      <input
+        type="button"
+        class="click"
+        id="generate-btn"
+        value="Generate color"
+      />
+    </div>
+    <!-- TODO: LEARN ABOUT DOM -->
+
+    <script>
+      var count = 0;
+      let array = [
+        "#a72c2c ",
+        "#d6e9ca ",
+        "#fff67f ",
+        "#a8e549 ",
+        "#eace7a ",
+        "#8dbcf4 ",
+        "#789263 ",
+        "#e6d74f ",
+        "#c0d6e4 ",
+        "#000000 ",
+        "#ffffff ",
+        "#444444 ",
+        "#420420 ",
+        "#696969 ",
+        "#996699 ",
+        "#cebbd9 ",
+        "#8555a0 ",
+        "#dbc3e9 ",
+        "#a76bc9 ",
+        "#dbc6a9 ",
+        "#55107e ",
+        "#ffe700 ",
+        "#ffe62f ",
+        "#fdff00 ",
+        "#feaec9 ",
+        "#faaac4 ",
+        "#ff69b4 ",
+        "#00ffff ",
+        "#dc143c ",
+        "#cf2835 ",
+        "#444444 ",
+      ];
+      var randomIndex = 0;
+      function generateColor() {
+        count++;
+        // console.log(`button pressed ${count}`);
+        var dombody = document.body;
+        
+        randomIndex = Math.floor(Math.random() * (array.length));
+        dombody.style.background = array[randomIndex];
+      }
+
+      var grabButton = document.getElementById("generate-btn");
+      grabButton.addEventListener("click", generateColor);
+    </script>
+  </body>
+</html>

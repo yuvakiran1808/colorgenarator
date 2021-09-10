@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: burlywood;
+  }
+  #button-container
+  {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin:0 auto;
+     
+  }
+  .click
+  {
+      padding: 10px 16px;
+      border-radius: 10px;
+      outline: none;
+      border: 1px solid white;
+      cursor: pointer;
+  }
